@@ -1,0 +1,444 @@
+
+/* Normalize.css for cross-browsing */
+@import "normalize.css";
+
+/* genral typography */
+body {
+	color:#666;
+	font-family:'Ubuntu', Arial, Helvetica, sans-serif; 
+	font-size:1em;
+	line-height:1.4em; 
+	font-weight:normal;
+}
+
+h2, h3, h4, h5, h6 {
+	font-weight:bold;
+	font-family:'Droid Serif', Arial, Helvetica, sans-serif; 
+	line-height:1.5em;
+	margin:.45em 0;
+	padding:0;
+}
+
+#contact-info {
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+#location {
+	margin-left: 55px;
+}
+
+/* links */
+a,
+a:visited,
+a:active,
+a:hover {
+   color:#0099ff;
+}
+a:hover { 
+   text-decoration:none;
+}
+
+/* Global Layout Set-up  Box sizing */
+* { 
+   box-sizing: border-box; 
+}
+
+/* Structure */   
+.wrappe {
+	width: 92%; 
+	margin: 0 auto;
+}
+
+header {padding:15px 0;}
+
+h11, h22 {
+	display: inline-block;
+	padding: 5px;
+}
+
+h22 {
+	line-height: 40px;
+	font-weight: bold;
+
+	color: #00BFFF;
+	font: normal 40px 'Rochester', cursive;
+	text-align:center;
+}
+
+h1 {
+	font: normal 28px 'Rochester', cursive;
+
+}
+
+.grid_2 h1 {text-align:center;} 
+
+.Welcome {line-height: 1.6em;}
+
+.firstcharacter {
+	color: #00BFFF;
+	float: left;
+	font-family: Georgia;
+	font-size: 75px;
+	line-height: 60px;
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-left: 3px;
+}	
+
+#logo img {
+	max-width: 80px;
+	max-height: 80px;
+	display:block;
+	margin: 10px 138px;	
+}
+
+#tel_logo {
+	text-align: center;
+	font-weight: bold;
+}
+
+#tel_logo img {
+	margin: 0px 0px -5px 10px ;
+}
+
+#tel_logo span:hover {
+	color: black;
+	font-size: 20px;
+	transform: scale(1.1); 
+	text-shadow: 1px 1px 20px grey;
+}
+
+#hero,#page-header {
+	background:#f3f3f3;
+	border-top:1px solid #e2e2e2;
+	border-bottom:1px solid #e2e2e2;
+	padding:20px 0;
+}
+
+#hero h1 { 
+	line-height:1.2em;
+	margin-top:0px;
+	margin-bottom:10px;
+}
+
+.flexslider {
+	display:block;
+}
+
+#content {  
+	margin:40px 0;
+}
+
+aside img{
+	width: 50%;
+	height: 50%;
+	margin-left:70px ;
+}
+
+p {
+	margin:0 0 1.5em;
+}
+
+.icons {
+	max-width: 30px;
+	max-height: 30px;
+	margin:5px 20px -8px 5px;
+}
+
+.location {
+	margin-left: 55px;
+}
+
+/* RESPONSIVE IMAGES */
+img {max-width:100%; height:auto;}
+
+
+/*MENU*/
+.menu-toggle {
+	display:block;
+	padding:10px;
+	margin:20px 0 0;
+	background:#666;
+	color:#fff;
+	cursor:pointer;
+	text-transform:uppercase;
+	font-size:20px;
+}
+.menu-toggle.toggled-on {
+	background:#0099ff;
+}
+.srt-menu {
+	display:none;
+}	
+.srt-menu.toggled-on {
+	display:block;
+	position:relative;
+	z-index:10;
+}
+
+.srt-menu {
+	clear:both;
+	margin-bottom:60px;
+
+}
+.srt-menu li a {
+	background:#dadada;
+	display:block;
+	margin:1px 0; 
+	padding:10px;
+	text-decoration:none;
+}
+.srt-menu li a:hover {
+	background:#0099ff;
+	color:#fff;
+}
+.srt-menu li li a {
+	background:#e8e8e8;
+	padding-left:40px;
+}
+.srt-menu li li li a {
+	background:#efefef;
+	padding-left:80px;
+}
+
+
+.grid_1,.grid_2,.grid_3 {	
+	margin-bottom:40px;
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/*FOOTER*/
+footer {  
+	clear:both;
+	font-size:80%;
+	padding:20px 0;
+}
+
+/*colors and backgrounds*/
+body {background:#fff;}
+
+h1, h2, h3, h4, h5, h6 {color:#333; }
+
+footer { 
+	background:#333;
+	color:#ccc;
+}
+
+/*Floats clearfix*/ 
+.clearfix:before,.clearfix:after,
+.row:before,.row:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after,.container:after,.row:after {
+	clear: both;
+}
+
+/*Devices starting from 481px - around tablet size*/
+@media only screen and (min-width: 481px) {
+
+	#tel_logo {
+		text-align: left;
+		margin-left: 65px;
+	}
+
+	.menu-toggle {
+		margin-top:10px;
+		float:right;
+	}
+	aside img {
+		width: 50%;
+		height: 50%;
+		margin-left: 170px;
+	}
+} 
+
+/*Devices more than 920px resolution( desctop size, or small laptops)*/
+@media only screen and (min-width: 920px) {
+
+	.wrapper {
+		max-width: 1200px; 
+		margin: .75em auto;
+	}
+
+	#tel_logo {
+		text-align: right;
+		float:right;
+	}
+	#content {  
+		float:left;
+		width:65%;
+	}
+	#content.wide-content {
+		float:none;
+		width:100%;
+	}
+
+	.flexslider {
+		display:block;
+		margin: 0 50px 60px 50px; 
+		background: #fff; 
+		border: 4px solid #fff; 
+		border-radius: 4px; 
+		box-shadow: 0 1px 4px rgba(0,0,0,.2); 
+
+	}
+
+	aside { 
+		float:right;
+		width:30%;
+	}
+
+	aside img {
+		padding-top: 70px;
+		width: 100%;
+		height: auto;
+		margin-left: 0;
+	}
+
+	/***MENU - STYLES ***/
+	.menu-toggle {display:none;}
+	#menu-main-navigation {display:block;}
+
+	.srt-menu, .srt-menu * {
+		margin:	0;
+		padding: 0;
+		list-style:	none;
+	}
+	.srt-menu ul {
+		position: absolute;
+		display: none;
+		width: 12em; /* left offset of submenus need to match (see below) */
+	}
+	.srt-menu ul li {
+		width: 100%;
+	}
+	.srt-menu li:hover {
+		visibility:	inherit; /* fixes IE7 'sticky bug' */
+	}
+	.srt-menu li {
+		float: left;
+		position: relative;
+		margin-left: 1px;
+	}
+	.srt-menu li li {
+		margin-left: 0px;
+	}
+	.srt-menu a {
+		display: block;
+		position: relative;
+	}
+	.srt-menu li:hover ul,
+	.srt-menu li.sfHover ul {
+		display:block;
+		left: 0;
+		top: 45px; /* match top ul list item height */
+		z-index: 99;
+		box-shadow: 2px 3px 2px 0px rgba(00, 00, 00, .3);
+	}
+	ul.srt-menu li:hover li ul,
+	ul.srt-menu li.sfHover li ul {
+		top: -999em;
+	}
+	ul.srt-menu li li:hover ul,
+	ul.srt-menu li li.sfHover ul {
+		left: 12em; /* match ul width */
+		top: 0;
+	}
+	ul.srt-menu li li:hover li ul,
+	ul.srt-menu li li.sfHover li ul {
+		top: -999em;
+	}
+	ul.srt-menu li li li:hover ul,
+	ul.srt-menu li li li.sfHover ul {
+		left: 10em; /* match ul width */
+		top: 0;
+	}
+
+	/*** NAV ***/
+	#topnav, .srt-menu {
+		float: right;
+		margin: .35em 0 0 0;
+	}
+
+	.srt-menu a {
+		text-decoration:none;
+	}
+
+	.srt-menu li a {
+		background:#fff;
+		margin:0; 
+		padding:10px 20px;
+		height:45px;
+	}
+
+	.srt-menu a, .srt-menu a:visited { 
+		color:#0099ff;	
+	}
+
+	.srt-menu li li a {
+		border-top: 1px solid rgba(255,255,255,.2);
+		background: #333; /*fallback for old IE*/
+		background:rgba(0,0,0,.6);
+		color:	#fff;
+		padding-left:20px;
+		height:auto;
+	}
+
+	.srt-menu li li a:visited {color:#fff;}
+	.srt-menu li li li a,
+	.srt-menu li.current * li a {
+		padding-left:20px;
+		background:rgba(0,0,0,.6);
+	}
+
+	.srt-menu li:hover > a,
+	.srt-menu li.current a { 
+		color:#fff;
+		background:#0099ff;
+	}
+
+	.srt-menu li li:hover > a {
+		color:#fff;
+		background:#0099ff;
+	}
+
+
+	/*GRID & Columns : 12 */
+	.row {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	iframe{
+		margin-left: -8px;
+	}
+
+	.first-header {
+		margin-left: 2px;
+	}
+
+	.grid_1 { width: 33.33333333%; }
+	.grid_2 { width: 41.66666667%; }
+	.grid_3 { width: 58.33333333%; }
+
+
+	.grid_1,
+	.grid_2,
+	.grid_3 {
+		float: left;
+		display: block;
+	}
+
+	.rightfloat {float:right;}
+
+	#hero [class*="grid_"] { margin-bottom:-20px;}
+}
+
+
+
